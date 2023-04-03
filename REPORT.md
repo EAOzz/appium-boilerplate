@@ -32,7 +32,7 @@
 |5. should be able to open the drag and drop screen|passed| |
 |6. should be able to open the drag and drop screen|passed| |
 |**8. WebdriverIO and Appium, when interacting with a WebView**|**failed** | |
-|1. should be able to switch between webview, native and webview|failed| |
+|1. should be able to switch between webview, native and webview|failed|https://github.com/EAOzz/appium-boilerplate/issues/1|
 |**9. WebdriverIO and Appium, when interacting with a webview through XPATH**|**passed** | |
 |1. should be able to verify that the WebView is shown by xpath|passed| |
 |2. should be able to verify that the WebView is shown by switching to the WebView|passed| |
