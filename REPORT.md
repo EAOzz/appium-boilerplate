@@ -21,6 +21,8 @@
 |**5. WebdriverIO and Appium, when interacting with a login form**|**passed** | |
 |1. should be able login successfully|passed| |
 |2. should be able sign up successfully|passed| |
+|3. should not be able login unsuccessfully|failed| |
+|1. should not be able login unsuccessfully|passed| |
 |**6. WebdriverIO and Appium, when using swiping**|**passed** | |
 |1. should be able to swipe horizontal by swiping the carousel from left to right|passed| |
 |2. should be able to swipe vertical by finding the surprise|passed| |
@@ -36,3 +38,6 @@
 |**9. WebdriverIO and Appium, when interacting with a webview through XPATH**|**passed** | |
 |1. should be able to verify that the WebView is shown by xpath|passed| |
 |2. should be able to verify that the WebView is shown by switching to the WebView|passed| |
+
+
+Spec Files:      7 passed, 2 failed, 9 total (100% completed) in 00:06:59

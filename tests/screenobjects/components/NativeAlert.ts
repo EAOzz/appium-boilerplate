@@ -3,6 +3,7 @@ const SELECTORS = {
         ALERT_TITLE: '*//android.widget.TextView[@resource-id="android:id/alertTitle"]',
         ALERT_MESSAGE: '*//android.widget.TextView[@resource-id="android:id/message"]',
         ALERT_BUTTON: '*//android.widget.Button[@text="{BUTTON_TEXT}"]',
+        ALERT_WARNING: '*//android.widget.ScrollView[@content-desc="Login-screen"]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]/android.widget.TextView[3]',
     },
     IOS: {
         ALERT: '-ios predicate string:type == \'XCUIElementTypeAlert\'',
@@ -59,6 +60,22 @@ class NativeAlert {
 
         return `${await $(SELECTORS.ANDROID.ALERT_TITLE).getText()}\n${await $(SELECTORS.ANDROID.ALERT_MESSAGE).getText()}`;
     }
+
+    static async textWarning ():Promise<string> {
+        return `${await $(SELECTORS.ANDROID.ALERT_WARNING).getText()}`;
+    }
+
+    static async waitForIsWarning (isWarning = true) {
+        const selector = driver.isAndroid
+            ? SELECTORS.ANDROID.ALERT_WARNING
+            : SELECTORS.IOS.ALERT;
+
+        return $(selector).waitForExist({
+            timeout: 11000,
+            reverse: !isWarning,
+        });
+    }
+
 }
 
 export default NativeAlert;
