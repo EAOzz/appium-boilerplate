@@ -18,10 +18,10 @@
 |3. should be able select a value from the select element|passed| |
 |4. should be able to open the alert and close it with all 3 buttons|passed| |
 |5. should be able to determine that the inactive button is inactive|passed| |
-|**5. WebdriverIO and Appium, when interacting with a login form**|**passed** | |
+|**5. WebdriverIO and Appium, when interacting with a login form**|**failed** | |
 |1. should be able login successfully|passed| |
 |2. should be able sign up successfully|passed| |
-|3. should not be able login unsuccessfully|failed| |
+|3. should not be able login unsuccessfully|failed|https://github.com/EAOzz/appium-boilerplate/issues/2 |
 |1. should not be able login unsuccessfully|passed| |
 |**6. WebdriverIO and Appium, when using swiping**|**passed** | |
 |1. should be able to swipe horizontal by swiping the carousel from left to right|passed| |
